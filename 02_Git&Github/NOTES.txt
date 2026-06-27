@@ -1,0 +1,8 @@
+LECTURE - 2 Git and GITHUB
+
+workspace -> Staging -> Local Repo -> Remote Repo
+- workspace is where or the area where we work
+- staging is nothing but when we start working first git has too see whats happenig i.e "Tracking" the folder thus Staging is the are where git start Tracking the project
+- Local Repo is the local storage area on the Local device where the work is tracked and stroed, triggered when "Commit" command
+- Remote repo is just the Remote area on which the work is strored in our case "GitHub"
+
