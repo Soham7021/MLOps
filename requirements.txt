@@ -5,3 +5,5 @@ PyYAML
 nltk
 dvclive
 dvc
+dvc[s3]
+awscli

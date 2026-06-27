@@ -26,7 +26,19 @@ Expermients with DVC:
 
 
 
+Adding remote S3 Storage to DVC:-
+https://us-east-1.console.aws.amazon.com/console/home?region=us-east-1#
 
+
+1) Login to AWS Console
+2) Create an IAM User to connect dvc with s3 from local(save the user name and pass this is required) 
+3) Create S3 bucket on AWS 
+4) Pip install dvc[s3]
+5) Pip install awscli
+6) Write this command "aws configure" (after this you will be asked to enter user key and pass key that you will get from the IAM user creation process paste it here to configure)
+7) now configure s3 using "dvc remote add -d dvcstore s3://{bucket_name}
+8) dvc commit, dvc push the exp that you want to keep 
+10) Finally git add, commit and push
 
 
 
