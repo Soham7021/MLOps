@@ -220,10 +220,14 @@ __marimo__/
 # DVC
 .dvc/cache/
 .dvc/tmp/
-!.dvc/
-!.dvc/.gitignore
-!.dvc/config
-!.dvcignore
-*.dvc
+!/05_AWS&DVC/.dvc/
+!/05_AWS&DVC/.dvc/**
+!/05_AWS&DVC/.dvcignore
+!/05_AWS&DVC/*.dvc
+
+/05_AWS&DVC/data
+/05_AWS&DVC/logs
+/05_AWS&DVC/models
+/05_AWS&DVC/reports
 
 # Virtual environments are already covered by existing rules.
