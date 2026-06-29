@@ -5,9 +5,6 @@ from sklearn.datasets import load_breast_cancer
 import pandas as pd
 import mlflow
 
-
-mlflow.set_tracking_uri("http://127.0.0.1:5000")
-
 # Load the Breast Cancer dataset
 data = load_breast_cancer()
 X = pd.DataFrame(data.data, columns=data.feature_names)
@@ -40,7 +37,7 @@ grid_search = GridSearchCV(estimator=rf, param_grid=param_grid, cv=5, n_jobs=-1,
 # # Till here
 
 
-mlflow.set_experiment('breast-cancer-rf-hp-1')
+mlflow.set_experiment('breast-cancer-rf-hp')
 
 with mlflow.start_run() as parent:
     grid_search.fit(X_train, y_train)
